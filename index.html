@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <!--Emmet!-->
+</head>
+<body>
+    <div class="header">
+        <p class="title">Etch-a-Sketch</p>
+    </div>
+    <div class="main">
+        <div class="gridSizeChanger">
+            <input type="range" class="slider" min="1" max="100" value="16" id="slider">
+            <button id="arrayButton">Change Grid Size</button>
+            <p class="sliderValue">16</p>
+        </div>
+        <button class="removeGrid">Toggle Grid</button>
+        <input type="color" class="colorPicker">
+        <input type="checkbox" class="randomColor">
+        <div id="divContainer"></div>
+    </div>
+</body>
+</html>
