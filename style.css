@@ -1,11 +1,12 @@
 body {
     font-family: 'Teko', sans-serif;
     background-color: rgb(83, 104, 219);
+    font-size: 1.5rem;
 }
 
 #divContainer {
-    width: 250px;
-    height: 250px;
+    width: 600px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -82,6 +83,7 @@ button:hover {
 .gridSlider {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .sliderValue {
@@ -96,10 +98,11 @@ button:hover {
 P {
     text-align: center;
     margin: 0;
+    font-size: 30px;
 }
 
 .smaller {
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .colorDiv {
@@ -108,8 +111,16 @@ P {
 
 .randomColor {
     display: flex;
-    font-size: 10px;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     padding-top: 2.5rem;
+}
+
+.ArrayButton {
+    margin-top: -20px;
+}
+
+.main {
+    justify-content: center;
 }
