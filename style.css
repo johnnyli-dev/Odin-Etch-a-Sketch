@@ -1,6 +1,11 @@
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: rgb(83, 104, 219);
+}
+
 #divContainer {
-    width: 320px;
-    height: 320px;
+    width: 250px;
+    height: 250px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -57,5 +62,54 @@ button:hover {
 .colorPicker {
     border: none;
     cursor: pointer;
-    background-color: white;
+    background-color: rgb(95, 113, 212);
+}
+
+.header {
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+}
+
+.main {
+    display: flex;
+}
+
+.inputs {
+    background-color: rgb(95, 113, 212);
+    text-align: center;
+}
+
+.gridSlider {
+    display: flex;
+    align-items: center;
+}
+
+.sliderValue {
+    margin: 0;
+    padding-top: 0.2rem;
+}
+
+.header {
+    margin: 1rem;
+}
+
+P {
+    text-align: center;
+    margin: 0;
+}
+
+.smaller {
+    font-size: 10px;
+}
+
+.colorDiv {
+    padding-top: 2.5rem;
+}
+
+.randomColor {
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5rem;
 }

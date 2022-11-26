@@ -4,7 +4,7 @@ let arraySize = 16;
 const arraySlider = document.getElementById("slider");
 const arrayButton = document.getElementById("arrayButton");
 const sliderValue = document.querySelector(".sliderValue");
-let totalSize = 320;
+let totalSize = 250;
 let boxSize = 16;
 const colorPicker = document.querySelector(".colorPicker");
 let randomColor = document.querySelector(".randomColor");
@@ -19,7 +19,7 @@ function changeArraySize(size) {
         element.remove();
     });
 
-    boxSize = (320 / (size)) - 1;
+    boxSize = (250 / (size)) - 1;
     for(let i = 0; i < size*size; i++) {
         //creates an array of divs and appends it to DOM
         arrayDiv[i] = document.createElement('div');

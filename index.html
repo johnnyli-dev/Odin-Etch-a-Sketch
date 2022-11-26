@@ -7,6 +7,10 @@
     <title>Etch-a-Sketch</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
     <!--Emmet!-->
 </head>
 <body>
@@ -14,15 +18,27 @@
         <p class="title">Etch-a-Sketch</p>
     </div>
     <div class="main">
-        <div class="gridSizeChanger">
-            <input type="range" class="slider" min="1" max="100" value="16" id="slider">
+        <div class="inputs">
+            <p>Controls</p>
+            <div class="gridSlider">
+                <input type="range" class="slider" min="1" max="100" value="16" id="slider">
+                <p class="sliderValue">16</p>
+            </div>
             <button id="arrayButton">Change Grid Size</button>
-            <p class="sliderValue">16</p>
+            <button class="removeGrid">Toggle Grid</button>
+            <div class="colorDiv">
+                <p class="smaller">Color Chooser</p>
+                <input type="color" class="colorPicker">
+            </div>
+            <div class="randomColor">
+                <p>Random Colors</p>
+                <input type="checkbox" class="randomColor">
+            </div>
+            
         </div>
-        <button class="removeGrid">Toggle Grid</button>
-        <input type="color" class="colorPicker">
-        <input type="checkbox" class="randomColor">
-        <div id="divContainer"></div>
+        <div class="gridArea">
+            <div id="divContainer"></div>
+        </div>
     </div>
 </body>
 </html>
