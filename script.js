@@ -19,7 +19,7 @@ function changeArraySize(size) {
         element.remove();
     });
 
-    boxSize = (totalSize / (size)) - 1;
+    boxSize = (totalSize / (size)) - 2;
     for(let i = 0; i < size*size; i++) {
         //creates an array of divs and appends it to DOM
         arrayDiv[i] = document.createElement('div');
@@ -70,13 +70,13 @@ gridButton.addEventListener("click", function() {
         arrayDiv.forEach(element => {
             element.style.border = "none";
             //add one to boxSize because the removal of the border
-            element.style.width = boxSize + 1 + "px";
-            element.style.height = boxSize + 1 + "px";
+            element.style.width = boxSize + 2 + "px";
+            element.style.height = boxSize + 2 + "px";
             toggle = true;
         })
     } else {
         arrayDiv.forEach(element => {
-            element.style.border = "black 0.5px solid";
+            element.style.border = "black 1px solid";
             //add one to boxSize because the removal of the border
             element.style.width = boxSize + "px";
             element.style.height = boxSize + "px";
